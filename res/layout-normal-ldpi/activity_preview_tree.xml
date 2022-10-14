@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.gopatj.mydraw.PreviewTreeActivity">
+
+    <ImageView
+        android:id="@+id/previewImageInPreviewActivity"
+        android:layout_width="198dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/preview_tree"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="61dp" />
+</android.support.constraint.ConstraintLayout>

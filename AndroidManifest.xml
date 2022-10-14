@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.gopatj.mydraw">
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HedgehogActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="myAction.HedgehogActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreviewHedgehogActivity"
+            android:label="Нарисуй иголки"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".TreeActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="myAction.TreeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreviewTreeActivity"
+            android:label="Нарисуй шарики"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".SheepActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="myAction.SheepActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreviewSheepActivity"
+            android:label="Нарисуй шерсть"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+    </application>
+
+</manifest>

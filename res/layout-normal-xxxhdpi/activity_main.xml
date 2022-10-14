@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="ru.gopatj.mydraw.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_green_light"
+            android:text="Давай порисуем"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageToHedgehog"
+            android:layout_alignStart="@+id/imageToHedgehog"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Веселый\n   ежик"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_green_light"
+            android:text="Новогодняя\n      елка"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageToHedgehog"
+            android:layout_alignEnd="@+id/imageToSheep"
+            android:layout_alignRight="@+id/imageToSheep"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="  Лысая   \n    овца"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/imageToHedgehog"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/holo_red_light"
+            app:srcCompat="@drawable/hedgehog" />
+
+        <ImageView
+            android:id="@+id/imageToTree"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/imageToHedgehog"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_light"
+            app:srcCompat="@drawable/tree" />
+
+        <ImageView
+            android:id="@+id/imageToSheep"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageToHedgehog"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:background="@android:color/holo_green_light"
+            app:srcCompat="@drawable/sheep_head" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
